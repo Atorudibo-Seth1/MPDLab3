@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rectangle Area Calculation"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length(cm)"
+            android:textSize="16sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:id="@+id/length"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breadth(cm)"
+            android:textSize="16sp"
+            android:layout_marginRight="10sp"/>
+
+        <EditText
+            android:id="@+id/breadth"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/areaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate AREA"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        />
+
+    <LinearLayout
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area in cm(sq):"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/areaAnswer"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text=""
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All Entries"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        />
+
+</LinearLayout>
